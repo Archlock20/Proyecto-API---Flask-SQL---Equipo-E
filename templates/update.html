@@ -1,3 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
 <form action="/update/{{contact.id}}" method="POST">
     <input type="text" name="cedula" placeholder="Escribe su # de cedula" value="{{contact.cedula}}">
     <input type="text" name="fullname" placeholder="Escribe tus nombres" value="{{contact.fullname}}">
@@ -8,3 +12,5 @@
 
     <button>Guardar</button>
 </form>
+
+{% endblock %}

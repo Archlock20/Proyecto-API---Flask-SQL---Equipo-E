@@ -61,3 +61,8 @@ def delete(id):
     flash("Estudiante eliminado satisfactoriamente")
 
     return redirect(url_for('contacts.index'))
+
+#RUTA "ACERCA DE:..."
+@contacts.route('/about')
+def about():
+    return render_template("about.html")

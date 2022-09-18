@@ -1,3 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
 {% with messages = get_flashed_messages() %}
 
     {% if messages %}
@@ -9,8 +13,6 @@
     {% endif %}
 
 {% endwith %}
-
-
 
 
 <form action="/new" method="POST">
@@ -42,3 +44,6 @@
 
     {% endfor %}
 </div>
+
+
+{% endblock %}
