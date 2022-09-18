@@ -1,4 +1,7 @@
 from utils.db import db
+#AQUI SE ANADE EL CODIGO NECESARIO PARA 
+#LA CREACION DE LAS TABLAS Y LOS CAMPOS EN LA BASE 
+# DE DATOS DE MYSQL
 
 class Contact(db.Model):
     id = db.Column(db.Integer, primary_key=True)
